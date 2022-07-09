@@ -23,7 +23,7 @@ django.setup()
 ws_patterns=[
     path('ws/test/',consumers.MyConsumer.as_asgi())
 ]
-
+ 
 application=ProtocolTypeRouter({
     'websocket': URLRouter(ws_patterns)
 })
