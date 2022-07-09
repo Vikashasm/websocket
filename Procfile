@@ -1,3 +1,1 @@
-web: gunicorn chat.wsgi:application --log-file - --log-level debug
-python manage.py collectstatic --noinput
-manage.py migrate
+daphne -p 8001 chat.asgi:application
