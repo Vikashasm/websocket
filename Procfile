@@ -1,2 +1,2 @@
-daphne -p 8001 chat.asgi:application
+web: chat/manage.py runserver 0.0.0.0:$PORT
 heroku ps:scale web=1
