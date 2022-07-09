@@ -18,8 +18,7 @@ from channels.routing import ProtocolTypeRouter, URLRouter
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chat.settings')
 
 application = get_asgi_application()
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "chat.settings")
-django.setup()
+
 ws_patterns=[
     path('ws/test/',consumers.MyConsumer.as_asgi())
 ]
