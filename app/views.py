@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def show(request):
-    return HttpResponse('hello sir your site is runnig well')
+    return render(request,'app/index.html')
