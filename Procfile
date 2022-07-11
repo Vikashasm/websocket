@@ -1,1 +1,1 @@
-web: gunicorn chat.wsgi --log-file - 
+waitress-serve --port=8000 chat.wsgi:application
